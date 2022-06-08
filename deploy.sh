@@ -1,5 +1,5 @@
 #!/usr/bin/env sh
-
+rm -rf dist
 # abort on errors
 set -e
 
@@ -13,11 +13,11 @@ cd dist
 # echo 'www.example.com' > CNAME
 
 git init
-git checkout -b gh-pages
+git checkout -b main
 git add -A
 git commit -m 'deploy'
 
 # Add your GitHub repo details here
-git push -f https://github.com/0ngezwa-felele/viteJs.git gh-pages
+git push -f git@github.com:0ngezwa-felele/viteJs.git main:gh-pages
 
 cd -
