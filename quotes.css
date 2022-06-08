@@ -5,7 +5,6 @@
 	margin-top:1em;
     background-size: cover;
     background-repeat: no-repeat;
-	/* width: 25em; */
 }
 
 .content {
@@ -17,7 +16,7 @@
 	width: 50%;
 }
 .quoteWidget{
-    border: solid black;
+    /* border: solid black; */
     border-radius: 25px;
     margin: auto;
     align-content: center;
@@ -29,7 +28,7 @@
 .quoteWidget button {
     margin: auto;
     background-color: whitesmoke;
-    border: 1px solid wheat;
+    border: 1px solid rgb(233, 243, 231);
     color: black;
     outline: none;
     transition: .6s ease;

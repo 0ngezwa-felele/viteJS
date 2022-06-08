@@ -18,6 +18,6 @@ git add -A
 git commit -m 'deploy'
 
 # Add your GitHub repo details here
-git push -f git@github.com:0ngezwa-felele/viteJs.git main:gh-pages
+git push -f git@github.com:0ngezwa-felele/viteJS.git main:gh-pages
 
 cd -
