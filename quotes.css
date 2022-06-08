@@ -1,0 +1,44 @@
+.quote {
+    background-color: limegreen;
+    border-radius : 0.5em;
+    padding: 1em;
+	margin-top:1em;
+    background-size: cover;
+    background-repeat: no-repeat;
+	/* width: 25em; */
+}
+
+.content {
+	margin: 1em 0 1em 0;
+}
+
+.quoteApp {
+	margin: auto;
+	width: 50%;
+}
+.quoteWidget{
+    border: solid black;
+    border-radius: 25px;
+    margin: auto;
+    align-content: center;
+    text-align: center;
+    width: 30%;
+    padding: 1em;
+    background-image: linear-gradient(rgba(180, 221, 180, 0.8),rgba(38, 228, 13, 0.8));
+}
+.quoteWidget button {
+    margin: auto;
+    background-color: whitesmoke;
+    border: 1px solid wheat;
+    color: black;
+    outline: none;
+    transition: .6s ease;
+    border-radius: 25px;
+  }
+  .quoteWidget button:hover{
+    cursor: pointer;
+    background-color: rgb(133, 221, 140);
+    color: black;
+    box-shadow: 0 0 5px rgb(255, 255, 255), 0 0 10px white, 0 0 15px white;
+    font-weight: bold;
+  }

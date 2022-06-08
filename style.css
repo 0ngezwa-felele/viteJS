@@ -1,3 +1,7 @@
+body {
+  background-image: linear-gradient(rgba(24, 65, 24, 0.8), rgba(38, 228, 13, 0.384));
+}
+
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -5,4 +9,33 @@
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+
+.loveWidget {
+  border: solid black;
+  border-radius: 25px;
+  margin: auto;
+  margin-bottom: 3%;
+  align-content: center;
+  text-align: center;
+  width: 30%;
+  padding: 1em;
+  background-image: linear-gradient(rgba(180, 221, 180, 0.8), rgba(38, 228, 13, 0.8));
+}
+
+.loveWidget button {
+  margin: auto;
+  background-color: whitesmoke;
+  border: 1px solid wheat;
+  color: black;
+  outline: none;
+  transition: .6s ease;
+  border-radius: 25px;
+}
+.loveWidget button:hover{
+  cursor: pointer;
+  background-color: rgb(101, 238, 142);
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
 }

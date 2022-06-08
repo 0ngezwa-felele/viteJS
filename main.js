@@ -1,10 +1,18 @@
 import './style.css'
+import Alpine from 'alpinejs'
+import {LoveCounter} from './love-counter';
+import persist from '@alpinejs/persist'
+import Quotes from './quotes';
+import './quotes.css'
 
-document.querySelector('#app').innerHTML = "I 💚 Alpine JS!";
-  
+// import * as fun from 'everyday-fun';
+ 
+window.Alpine = Alpine
+Alpine.plugin(persist)
+Alpine.data('quoteApp', Quotes)
 
+ 
+Alpine.data('loveCounter', LoveCounter);
+Alpine.start()
 
-
-// <h1>Hello Vite!</h1>;
-//   <a href="https://vitejs.dev/guide/features.html" target="_blank">Documentation</a
 
