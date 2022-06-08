@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/viteJS/assets/favicon.17e50649.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+
+  <script type="module" crossorigin src="/viteJS/assets/index.c2e0ec0c.js"></script>
+  <link rel="stylesheet" href="/viteJS/assets/index.42c3b69c.css">
+</head>
+
+<body>
+  <div class="overall">
+    <div class="loveWidget">
+      <div x-data="loveCounter">
+        <h1>Show some heart</h1>
+        <div x-text="hearts()">
+        </div>
+        <div>
+          <button @click="love()">Show 💟</button>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="quoteWidget">
+      <div x-data="quoteApp" class="quote">
+        <div x-text="quote.quote"></div>
+      </div>
+      <div x-data="quoteApp" class="quoteApp">
+        <h1>Quote App</h1>
+        <button @click="getQuote()">Next quote 📢</button>
+        <div class="quote">
+          <div x-text="quote.quote" class="content"></div>
+          <div>
+            <strong>by </strong><span x-text="quote.author"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+  
+</body>
+
+</html>
