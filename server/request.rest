@@ -1,0 +1,12 @@
+GET http://localhost:1420/api/test
+Content-Type: application/json
+# Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMG5nZXp3YS1mZWxlbGUiLCJpYXQiOjE2NTExNDgzMTR9.eGKI5jRnED51AG1EoYzDF-69lJmp9GL58thhKBlVMrc
+###
+
+POST http://localhost:1420/api/register
+Content-Type: application/json
+
+{
+    "username": "ongi",
+    "password": "ongi123"
+}
