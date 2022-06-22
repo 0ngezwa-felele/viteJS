@@ -1,8 +1,7 @@
 // const supertest = require('supertest');
 const PgPromise = require("pg-promise")
 const express = require('express');
-// const assert = require('assert');
-// const fs = require('fs');
+const cors = require("cors");
 require('dotenv').config()
 const API = require('./api');
 const { default: axios } = require('axios');
@@ -10,6 +9,7 @@ const app = express();
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(express.static("public"))
+app.use(cors())
 
 
 
