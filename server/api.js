@@ -62,7 +62,6 @@ module.exports = (app, db) => {
             }
             // if(username == username){
             //     throw Error('Logged successfully!');
-
             // }
             res.json({
                 success: 'Done!'
