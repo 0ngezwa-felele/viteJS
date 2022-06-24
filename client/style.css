@@ -1,5 +1,12 @@
 body {
   background-image: linear-gradient(rgba(24, 65, 24, 0.8), rgba(38, 228, 13, 0.384));
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: auto;
+  align-content: center;
+  text-align: center;
+  padding: 5em;
+  height: 475px;
 }
 
 #app {
@@ -37,4 +44,64 @@ body {
   color: black;
   box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
   font-weight: bold;
+}
+.overall{
+  border: solid black;
+  padding: 5em;
+  border-radius: 25px;
+  margin: auto;
+  margin-bottom: 3%;
+  align-content: center;
+  text-align: center;
+  /* width: 30%; */
+  padding: 1em;
+  background-image: linear-gradient(rgba(180, 221, 180, 0.8), rgba(38, 228, 13, 0.8));
+}
+}
+.log{
+  padding-bottom: 5em;
+}
+.log button{
+  margin: auto;
+  background-color: whitesmoke;
+  border: 1px solid wheat;
+  color: black;
+  height: 30px;
+  outline: none;
+  transition: .6s ease;
+  border-radius: 25px;
+}
+.log button:hover{
+  cursor: pointer;
+  background-color: rgb(101, 238, 142);
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+
+}
+.reg button{
+  margin: auto;
+  background-color: whitesmoke;
+  border: 1px solid wheat;
+  color: black;
+  height: 30px;
+  outline: none;
+  transition: .6s ease;
+  border-radius: 25px;
+}
+.reg button:hover{
+  cursor: pointer;
+  background-color: rgb(101, 238, 142);
+  color: black;
+  box-shadow: 0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight: bold;
+
+}
+.reg input{
+  padding: 0.25em;
+  border:solid black
+}
+.log input{
+  padding: 0.25em;
+  border:solid black
 }

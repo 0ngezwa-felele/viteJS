@@ -3,9 +3,10 @@ import axios from 'axios';
 export default function App() {
     return {
         user:{
-            username: null,
-            password: null
+            username: '',
+            password: ''
         },
+        error: '',
         logUser:{
             username: null,
             password: null
@@ -16,8 +17,15 @@ export default function App() {
             console.log(this.user);
             axios
             .post('http://localhost:1420/api/register', this.user)
+            
             .then((result)=>{
                 console.log(result.data)
+            }).catch(e => {
+
+                const { error } = e.response.data
+                this.error = error;
+                console.log(e);
+                setTimeout(()=> this.error = '', 2500)
             })
             console.log(this.user);
         },
@@ -32,9 +40,14 @@ export default function App() {
                 if(accessToken == null){
                     return false
                 }else{
-                    
+                  return  accessToken
                 }
+            }).catch(e => {
 
+                const { error } = e.response.data
+                this.error = error;
+                console.log(e);
+                setTimeout(()=> this.error = '', 2500)
             })
             console.log(this.logUser);
         }
